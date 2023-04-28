@@ -1,14 +1,9 @@
-## Blog Post Title From First Header
+## Solving Poisson's Equation Using Brownian Motion Using Octave
 
-Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
-
-If the file does not start with a header, then the post title will be derived from the filename.
-
-This is a sample blog post. You can talk about all sorts of fun things here.
-
+Partial differential equations are very complex, and difficult problems to derive forms of exact solutions unless using assumptions to make solutions easier to derive. Because of this, many domains that are solved with these equations are of simple geometries leaving the challenge of trying to look at more obscure domains. One possible solution to this problem is using the Feynman-Kac formula to derive an approximate mapping of the PDE. This post will go through the basic ideas of what is needed to make a solver of this type and some examples of typical solutions.
 ---
 
-### This is a header
+### **What is the Feynman-Kac Formula for the case of a Poisson Equation**
 
 #### Some T-SQL Code
 
