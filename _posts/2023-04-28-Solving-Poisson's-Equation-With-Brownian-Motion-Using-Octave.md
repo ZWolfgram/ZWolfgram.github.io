@@ -23,13 +23,17 @@ An example code of this process can be seen below along with a graph showing mut
 
 ![png](/Extra/BRWPDE/myfile.png)
 
-#### Some T-SQL Code
+```octave
 
-```tsql
-SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
-    , REVERSE('abc')
-FROM dbo.SomeTable s
-    CROSS JOIN dbo.OtherTable o;
+n = 1000;
+delta_t = sqrt(.001);
+
+#Produces an array of random variables and multiples by time step to make Brownian Motion
+dW = delta_t * randn(1001,1);
+dW(1) = 0;
+W = cumsum(dW);
+
+plot(W);
 ```
 
 #### Some PowerShell Code
