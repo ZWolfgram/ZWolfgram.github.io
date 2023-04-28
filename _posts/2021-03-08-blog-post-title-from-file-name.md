@@ -7,7 +7,7 @@ Partial differential equations are very complex, and difficult problems to deriv
 ## **Concepts Needed for Solution**
 ---
 To create this numerical method, a few basic definitions need to be addressed to allow for the reader to understand the codes as developed. These will be breifly addressed each.
----
+
 ## **What is Brownian Motion**
 
 
