@@ -45,4 +45,5 @@ ForEach ($thing in $things) {
 ```
 ## References
 [1] Bass, R. (2011). Stochastic Processes (Cambridge Series in Statistical and Probabilistic Mathematics). Cambridge: Cambridge University Press. doi:10.1017/CBO9780511997044
+
 [2] Martin, C., Zhang, H., Costacurta, J. et al. Solving Elliptic Equations with Brownian Motion: Bias Reduction and Temporal Difference Learning. Methodol Comput Appl Probab 24, 1603–1626 (2022). https://doi.org/10.1007/s11009-021-09871-9
