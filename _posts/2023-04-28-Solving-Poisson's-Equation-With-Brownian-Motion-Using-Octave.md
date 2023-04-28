@@ -11,7 +11,7 @@ Partial differential equations are very complex, and difficult problems to deriv
 To create this numerical method, a few basic definitions need to be addressed to allow for the reader to understand the codes as developed. These will be breifly addressed each.
 
 ### What is Brownian Motion
-
+---
 Brownian motion in of itself is the random movement of a point/particle in some domain. To make sense of this in the contexts of a math, this is defined as a wiener processes and given requirements needed [1].
 
 1. The wiener process must have a prescribed start point. In the case of our numerical method, this will be the point at which we want to solve the value of the PDE.
