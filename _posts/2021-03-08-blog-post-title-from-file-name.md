@@ -19,7 +19,7 @@ Brownian motion in of itself is the random movement of a point/particle in some 
 3. The increments of each step must be independent from any other step within the system. 
 4. The increment of each step is a normal distributed random variable with a mean of zero and a variance of the step size. This will be shown later within the code. 
 
-An example code of this process can be seen below along with a short video showing a unique series of events of brownian motion.
+An example code of this process can be seen below along with a graph showing mutliple unique sets of brownian motion from the same code.
 
 ![](https://github.com/ZWolfgram/ZWolfgram.github.io/blob/6d741b0a5e8e47c462198b1193f5abd4d3d15c98/Extra/BrownianMotion.png)
 
