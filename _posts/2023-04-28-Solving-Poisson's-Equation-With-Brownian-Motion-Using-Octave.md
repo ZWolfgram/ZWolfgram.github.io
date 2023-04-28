@@ -24,15 +24,14 @@ An example code of this process can be seen below along with a graph showing mut
 ![png](/Extra/BRWPDE/myfile.png)
 
 ```octave
-
-n = 1000;
 delta_t = sqrt(.001);
 
-#Produces an array of random variables and multiples by time step to make Brownian Motion
+#Produces an array of random variables and multiples by time step to make Brownian Motion. Also Setting the first point at the origin
 dW = delta_t * randn(1001,1);
 dW(1) = 0;
-W = cumsum(dW);
 
+#Sum the array from start to finish and plots array
+W = cumsum(dW);
 plot(W);
 ```
 
