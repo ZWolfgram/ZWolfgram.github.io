@@ -21,7 +21,7 @@ Brownian motion in of itself is the random movement of a point/particle in some 
 
 An example code of this process can be seen below along with a short video showing a unique series of events of brownian motion.
 
-![](https://github.com/ZWolfgram/ZWolfgram.github.io/blob/e9a970ba5bc98bfc48ddc4d7c65c68759e20f5e5/Extra/Brown.gif)
+![Brownian Motion](https://github.com/ZWolfgram/ZWolfgram.github.io/blob/8e6bb9dbd1341ae9f18e807d7bd677a146cb33ce/Extra/Brown.gif)
 
 #### Some T-SQL Code
 
