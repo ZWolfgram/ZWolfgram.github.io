@@ -116,7 +116,7 @@ M22N = np.zeros([500,500])
 ```
 We then finish the function by graphing the designated field, setting the axis limit for the calculated field, and calculating the amount of time that has passed. The last portion is catered to the programmer to know how many time steps have been taken since the start of the program. Also, setting the axis limit is a must as the problem with this method is the graphing of the field will update the axises max and min to the current highest and lowest value. This will ultimately make ugly graph and begin to show the error found in the calculation. 
 ## **Animation Example**
-![mp4](Extra/2dAnimator/Current,M11.mp4)
+https://github.com/ZWolfgram/ZWolfgram.github.io/assets/131365793/0fa71ea0-3253-4cfb-9c78-181821f400b8
 ## **References**
 
 [1] https://stackoverflow.com/questions/70723644/surface-animation-and-saving-with-matplotlib 
