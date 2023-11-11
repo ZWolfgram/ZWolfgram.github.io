@@ -1,8 +1,8 @@
 # 2d Animations MatLibPlot Python
 
-**Overview**
----
-Using just the MatLibPlot, one can create an animation video that is purely built into the python program without outside software. This a an extention of the post [1], but more centric towards a finite difference code.
+## Overview
+
+Using just the MatLibPlot, one can create an animation video that is purely built into the python program without outside software. This a an extention of the post [1], but more centric towards a finite difference code. 
 
 ## **Animation Code**
 
@@ -93,5 +93,30 @@ def animate(frame):
 anim = FuncAnimation(fig=fig,func = animate,frames=2000,interval=20)
 anim.save('A.mp4',fps=100)
 ```
-## References
+## **Necessary Portions In the Animate Function**
+
+What one will find is the necessary of global variables. Examples of [1] show the usage of the frame number to be used in some way to calculation a way of the field changing. However, within an actual finite difference code, one needs to update a set matrix with the initial conditions starting the 2d field. In this case, we have two seperate fields being calculated as a function of past, present, and future fields in regards to time step. This is done with the initialization of the variables of global in the first line of the function.
+```python
+global Deltat, Deltax, M11C, M11N, M11P, M22C, M22N, M22P, domainx, domainy,Shear_Modulus,rho,Lambda
+```
+We next want to clear the graph to make sure we do not overlap the values on the graph as they update. This will also ensure that each frame is the designated field you just calculated.
+```python
+ax.clear()
+```
+We then have some form of calculation done with whatever function is taking place within the domain. In general, this can be done with another definined function if they want which also accounts for boundary conditions. In this case, the boundary conditions are set to be a Dirichlet boundary condition as zero giving this calculation type. 
+
+After one finishes their calculations, we need to make our fields change to have a new past and present field from the ones calculated. I found that setting the future matrix to be set to an empty matrix of zeros also ensures this will not affect calculations when doing the next time step or frame.
+```python
+M11P = M11C
+M11C = M11N
+M22P = M22C
+M22C = M22N
+M11N = np.zeros([500,500])
+M22N = np.zeros([500,500])
+```
+We then finish the function by graphing the designated field, setting the axis limit for the calculated field, and calculating the amount of time that has passed. The last portion is catered to the programmer to know how many time steps have been taken since the start of the program. Also, setting the axis limit is a must as the problem with this method is the graphing of the field will update the axises max and min to the current highest and lowest value. This will ultimately make ugly graph and begin to show the error found in the calculation. 
+## **Animation Example**
+
+## **References**
+
 [1] https://stackoverflow.com/questions/70723644/surface-animation-and-saving-with-matplotlib 
